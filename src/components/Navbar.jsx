@@ -28,7 +28,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm z-100 border-b border-gray-100 shadow-xs">
+    <nav className="fixed top-0 left-0 right-0 bg-white/85 backdrop-blur-lg z-100 border-b border-gray-100 shadow-xs">
       <div className="w-full container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 md:h-20 h-14">
         {/* Logo */}
         <div className="flex items-center gap-1 cursor-pointer">
@@ -79,24 +79,27 @@ const Navbar = () => {
 
       {/* Mobile menu items */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200 py-4">
-          <div className="container mx-auto px-2 space-y-2">
+        <div className="md:hidden bg-white border-t border-gray-200 px-6">
+          <div className="container mx-auto space-y-2 py-4">
             {navLinks.map((linkItem, index) => {
               return (
                 <a
-                  className={`block text-sm font-medium p-4 ${
+                  className={`block text-sm font-medium py-4 ${
                     activeLink == linkItem.href
                       ? " text-blue-500"
                       : "text-gray-600 hover:text-gray-800"
                   }`}
-                  onClick={() => setActiveLink(linkItem.href)}
+                  onClick={() => {
+                    setActiveLink(linkItem.href);
+                    setIsMenuOpen(false);
+                  }}
                   href={linkItem.href}
                 >
                   {linkItem.label}
                 </a>
               );
             })}
-            <button className="w-full bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 text-sm font-medium transition-all hover:shadow-md hover:shadow-blue-200 cursor-pointer mb-4">
+            <button className="w-full bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 text-sm font-medium transition-all hover:shadow-md hover:shadow-blue-200 cursor-pointer my-4">
               <a href="#newsletter">Get in Touch</a>
             </button>
           </div>
