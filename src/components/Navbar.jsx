@@ -28,7 +28,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/85 backdrop-blur-lg z-100 border-b border-gray-100 shadow-xs">
+    <nav className="fixed top-0 left-0 right-0 bg-white/75 backdrop-blur-lg z-100 border-b border-gray-100 shadow-xs">
       <div className="w-full container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 md:h-20 h-14">
         {/* Logo */}
         <div className="flex items-center gap-1 cursor-pointer">
@@ -54,6 +54,7 @@ const Navbar = () => {
           {navLinks.map((navItem, index) => {
             return (
               <a
+                key={index}
                 href={navItem.href}
                 // after: pseudo class to add underline effects
                 className={`text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-blue-500 after:transition-all ${

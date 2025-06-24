@@ -8,7 +8,7 @@ const Hero = () => {
       {/* Left col */}
       <div className="w-full md:w-1/2 space-y-8">
         {/* Star badge */}
-        <div className="flex items-center gap-2 bg-gray-50 w-fit px-4 py-2 rounded-full hover:bg-gray-100 transition-color cursor-pointer group">
+        <div className="flex items-center gap-2 bg-gray-50 w-fit px-4 py-2 rounded-full hover:bg-gray-100 transition-color cursor-pointer group sm:justify-self-center md:justify-self-auto">
           <span className="text-blue-600 group-hover:scale-110 transition-transform group-hover:text-amber-300">
             ★
           </span>
@@ -16,20 +16,20 @@ const Hero = () => {
         </div>
 
         {/* Hero text */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight md:text-left sm:text-center">
           We boost the growth for{" "}
-          <span className="text-blue-600 relative inline-block">
+          <span className="text-blue-600 relative inline-block hover:scale-105 cursor-pointer hover:text-blue-800">
             Startup to Fortune 500
             <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-200/60"></span>
           </span>{" "}
           Companies <span className="inline-block ml-2 animate-pulse">⏰</span>
         </h1>
-        <p className="text-gray-600 text-lg md:text-xl max-w-xl">
+        <p className="text-gray-600 text-lg md:text-xl max-w-xl sm:text-center md:text-left">
           Get the most accurate leads, sales people training and conversion,
           tools and more - all within the same one billing.
         </p>
 
-        <div className="flex gap-4 max-w-md">
+        <div className="flex gap-4 md:max-w-md sm:max-w-full">
           <input
             type="email"
             placeholder="Enter your email"
@@ -42,7 +42,7 @@ const Hero = () => {
       </div>
 
       {/* Right col */}
-      <div className="w-full md:w-1/2 mt-16 md:mt-0 pl-0 md:pl-12">
+      <div className="w-full md:w-1/2 mt-16 md:mt-0 pl-0 md:pl-12 ">
         <div>
           <img
             className="z-10 hover:scale-[1.02] transition-transform duration-300"
