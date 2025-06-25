@@ -2,9 +2,12 @@ import React from "react";
 
 const PurposeSection = () => {
   return (
-    <section className="w-full bg-gray-50 py-16 px-4 md:px-8 sm:px-6">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-3 grid-cols-1 gap-8 text-center md:text-left items-center">
+    <section
+      id="about"
+      className="w-full bg-gray-50 py-16 px-4 md:px-8 sm:px-6"
+    >
+      <div className="max-w-full px-6 mx-auto">
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-6 text-center md:text-left items-center">
           {/* First col */}
           <div className="">
             <p className="text-sm text-purple-500 font-bold mb-2">
@@ -16,9 +19,9 @@ const PurposeSection = () => {
           </div>
           {/* Second col */}
           <div className="md:flex-row flex-col flex gap-6 justify-center items-center md:items-start">
-            <div className="size-8 rounded-full bg-gradient-to-tl from-purple-600 to-purple-300"></div>
-            <div className="w-3/4">
-              <h3 className="text-lg mb-2 font-bold text-gray-900">
+            <div className="cursor-pointer opacity-65 hover:scale-105 hover:opacity-100 transition-all size-8 rounded-full bg-gradient-to-tl from-purple-600 to-purple-300 flex-shrink-0"></div>
+            <div className="flex-1">
+              <h3 className="text-lg mb-2 font-bold text-gray-800">
                 Built for impact
               </h3>
               <p className="text-md text-gray-500 ">
@@ -28,9 +31,9 @@ const PurposeSection = () => {
             </div>
           </div>
           <div className="md:flex-row flex-col flex gap-6 justify-center items-center md:items-start">
-            <div className="size-8 rounded-full bg-gradient-to-tl from-orange-600 to-orange-200"></div>
-            <div className="w-3/4">
-              <h3 className="text-lg mb-2 font-bold text-gray-900">
+            <div className="cursor-pointer opacity-65 hover:scale-105 hover:opacity-100 transition-all size-8 rounded-full bg-gradient-to-tl from-orange-600 to-orange-200 flex-shrink-0"></div>
+            <div className="flex-1">
+              <h3 className="text-lg mb-2 font-bold text-gray-800">
                 In sync with you
               </h3>
               <p className="text-md text-gray-500 ">

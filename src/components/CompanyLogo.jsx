@@ -9,7 +9,7 @@ function CompanyLogo() {
   const logos = [slack, amazon, woocommerce, meundies, sitepoint];
   return (
     <div className="w-full container mx-auto py-20 flex md:flex-row flex-col sm:items-center items-center font-medium overflow-hidden gap-10 ">
-      <div className="w-full md:w-[300px] shrink-0 text-gray-600 md:border-l-4 md:border-t-0 border-t-4 border-l-0 border-blue-500  bg-white px-8 py-6 sm:py-2 z-10 md:text-base text-md font-semibold text-center sm:mb-4 sm:shadow-none">
+      <div className="w-full md:w-[300px] shrink-0 text-gray-600 md:border-l-4 md:border-t-0 border-t-4 border-l-0 border-blue-500  bg-white px-8 md:py-4 py-6  z-10 md:text-base text-md font-semibold text-center sm:mb-4 ">
         Proud partner at <br /> Hubspot & Segment
       </div>
 
