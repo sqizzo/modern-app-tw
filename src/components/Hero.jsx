@@ -15,7 +15,7 @@ const Hero = () => {
           <span className="text-blue-600 group-hover:scale-110 transition-transform group-hover:text-amber-300">
             ★
           </span>
-          <span className="text-sm font-medium ">Jump start your growth</span>
+          <span className="text-sm font-medium ">Jump start your growth!</span>
         </div>
 
         {/* Hero text */}
